@@ -46,14 +46,14 @@ const Register = () => {
                                                         gutterBottom
                                                         variant={matchDownSM ? 'h3' : 'h2'}
                                                     >
-                                                        Sign up
+                                                        Daftar
                                                     </Typography>
                                                     <Typography
                                                         variant="caption"
                                                         fontSize="16px"
                                                         textAlign={matchDownSM ? 'center' : 'inherit'}
                                                     >
-                                                        Enter your credentials to continue
+                                                        Masukan Kredensial Anda Untuk Melanjutkan
                                                     </Typography>
                                                 </Stack>
                                             </Grid>
@@ -73,7 +73,7 @@ const Register = () => {
                                                 variant="subtitle1"
                                                 sx={{ textDecoration: 'none' }}
                                             >
-                                                Already have an account?
+                                                Sudah Punya Akun?
                                             </Typography>
                                         </Grid>
                                     </Grid>

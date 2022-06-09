@@ -1,5 +1,5 @@
 // material-ui
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
@@ -14,6 +14,9 @@ const SamplePage = () => (
             reprehended in voltage veil esse colum doolie eu fujian bulla parian. Exceptive sin ocean cuspidate non president, sunk in culpa
             qui officiate descent molls anim id est labours.
         </Typography>
+        <Button variant="text">Text</Button>
+        <Button variant="contained">Contained</Button>
+        <Button variant="outlined">Outlined</Button>
     </MainCard>
 );
 

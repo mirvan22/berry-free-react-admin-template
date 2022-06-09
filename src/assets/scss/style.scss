@@ -126,3 +126,141 @@
         transform: translateX(10px);
     }
 }
+
+
+/* Header */
+.css-kvip5o-MuiToolbar-root {
+   background-color: rgba(2, 74, 230, 0.719);
+}
+
+
+
+
+
+
+
+
+/* PageLogin */
+#PageLogin{
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+   
+        
+    } 
+
+     background-image: url(../images/water3.jpg);
+     background-size: cover;
+     background-position: center;
+     display: grid;
+     grid-template-areas: 'left left left right right';
+   
+     
+     #LeftLogin{
+         grid-area: left;
+         z-index: 9999;
+         color: aliceblue;
+        line-height: 40px;
+        font-weight: lighter;
+        font-family: poppins;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: #e6e6e6;
+        text-shadow: 0 2px 5px black;
+        
+
+       
+        h1{
+            font-variant: small-caps;
+            margin-bottom: 50px;
+            font-size: 150px;
+            
+
+            span{
+             font-size: 100px;
+             display: block;
+             margin-top: 50px;
+            }
+        }
+
+     }
+
+     #RightLogin{
+         
+         grid-area: right;
+       ;
+
+     
+
+     }
+    .css-b1vqef-MuiPaper-root-MuiCard-root {
+        position: relative;
+        background-color: rgba($color: white, $alpha: 0.5);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        margin: 0;
+        padding-top: 0px;
+        margin-bottom: 0px;
+       box-shadow: 0px 2px 5px black;
+       
+  
+    }
+ 
+    .css-qddg4l-MuiButtonBase-root-MuiButton-root {
+        background-color: #0076d3;
+    }
+    .css-r8wi31-MuiTypography-root{
+        color: #0076d3;
+
+    }
+    .css-1vptd2f-MuiButtonBase-root-MuiCheckbox-root.Mui-checked{
+        color: #0076d3;
+    }
+    .css-b1vqef-MuiPaper-root-MuiCard-root {
+        color: #232323;
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+        fill: #0076d3;
+    }
+    .FooterBackground{
+        width: 500px;
+        height: 280px;
+        
+        background-image: url(../images/water.png);
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       -webkit-transform: scaleX(-1);
+       transform: scaleX(-1);
+       z-index: 3;
+    }
+
+    .css-q1eefp-MuiTypography-root{
+        
+        font-variant: small-caps;
+        color: aliceblue;
+        font-size: 50px;
+        color: #3b3b3b;
+       
+      
+
+        span{
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+            color: #0076d3;
+            font-size: 30px;
+          
+        }
+    }
+
+    
+}
+

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 // material-ui
-import { useTheme } from '@mui/material/styles';
+
 import { Divider, Grid, Stack, Typography, useMediaQuery } from '@mui/material';
 
 // project imports
@@ -16,11 +16,11 @@ import AuthFooter from 'ui-component/cards/AuthFooter';
 // ================================|| AUTH3 - LOGIN ||================================ //
 
 const Login = () => {
-    const theme = useTheme();
     const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <AuthWrapper1>
+        <div id="PageLogin">
+            <h2>Test</h2>
             <Grid container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
                 <Grid item xs={12}>
                     <Grid container justifyContent="center" alignItems="center" sx={{ minHeight: 'calc(100vh - 68px)' }}>
@@ -28,9 +28,7 @@ const Login = () => {
                             <AuthCardWrapper>
                                 <Grid container spacing={2} alignItems="center" justifyContent="center">
                                     <Grid item sx={{ mb: 3 }}>
-                                        <Link to="#">
-                                            <Logo />
-                                        </Link>
+                                        <Link to="#"></Link>
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Grid
@@ -46,14 +44,14 @@ const Login = () => {
                                                         gutterBottom
                                                         variant={matchDownSM ? 'h3' : 'h2'}
                                                     >
-                                                        Hi, Welcome Back
+                                                        Hallo, Selamat Datang!
                                                     </Typography>
                                                     <Typography
                                                         variant="caption"
                                                         fontSize="16px"
                                                         textAlign={matchDownSM ? 'center' : 'inherit'}
                                                     >
-                                                        Enter your credentials to continue
+                                                        Masukan Kredensial anda untuk melanjutkan
                                                     </Typography>
                                                 </Stack>
                                             </Grid>
@@ -73,7 +71,7 @@ const Login = () => {
                                                 variant="subtitle1"
                                                 sx={{ textDecoration: 'none' }}
                                             >
-                                                Don&apos;t have an account?
+                                                Tidak memiliki akun?
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -86,7 +84,7 @@ const Login = () => {
                     <AuthFooter />
                 </Grid>
             </Grid>
-        </AuthWrapper1>
+        </div>
     );
 };
 
