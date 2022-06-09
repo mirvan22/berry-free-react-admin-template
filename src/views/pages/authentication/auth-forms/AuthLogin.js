@@ -59,20 +59,6 @@ const FirebaseLogin = ({ ...others }) => {
 
     return (
         <>
-            <Grid container direction="column" justifyContent="center" spacing={2}>
-                <Grid item xs={12}></Grid>
-                <Grid item xs={12}>
-                    <Box
-                        sx={{
-                            alignItems: 'center'
-                        }}
-                    ></Box>
-                </Grid>
-                <Grid item xs={12} container alignItems="center" justifyContent="center">
-                    <Box sx={{ mb: 1 }}></Box>
-                </Grid>
-            </Grid>
-
             <Formik
                 initialValues={{
                     username: 'Van_Violet',
@@ -101,6 +87,9 @@ const FirebaseLogin = ({ ...others }) => {
             >
                 {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
                     <form noValidate onSubmit={handleSubmit} {...others}>
+                        <Typography color={theme.palette.secondary.dark} gutterBottom variant={matchDownSM ? 'h2' : 'h1'}>
+                            <span>Login</span>
+                        </Typography>
                         <FormControl fullWidth error={Boolean(touched.email && errors.email)} sx={{ ...theme.typography.customInput }}>
                             <InputLabel htmlFor="outlined-adornment-email-login">Username</InputLabel>
                             <OutlinedInput
@@ -179,17 +168,19 @@ const FirebaseLogin = ({ ...others }) => {
 
                         <Box sx={{ mt: 2 }}>
                             <AnimateButton>
-                                <Button
-                                    disableElevation
-                                    disabled={isSubmitting}
-                                    fullWidth
-                                    size="large"
-                                    type="submit"
-                                    variant="contained"
-                                    color="primary"
-                                >
-                                    Masuk
-                                </Button>
+                                <div className="my-btn">
+                                    <Button
+                                        disableElevation
+                                        disabled={isSubmitting}
+                                        fullWidth
+                                        size="large"
+                                        type="submit"
+                                        variant="contained"
+                                        color="primary"
+                                    >
+                                        Masuk
+                                    </Button>
+                                </div>
                             </AnimateButton>
                         </Box>
                     </form>

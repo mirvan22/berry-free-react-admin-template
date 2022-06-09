@@ -130,8 +130,18 @@
 
 /* Header */
 .css-kvip5o-MuiToolbar-root {
-   background-color: rgba(2, 74, 230, 0.719);
+   background-color: rgba(2, 74, 230, 1);
+   box-shadow: 0px 1px 10px rgba(44, 44, 44,0.6);
+
+
+ .logoTirta{
+     color: #e6e6e6;
+     font-family: poppins;
+     
+ }
 }
+
+
 
 
 
@@ -151,6 +161,7 @@
         left: 0;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 0;
+        
    
         
     } 
@@ -158,6 +169,7 @@
      background-image: url(../images/water3.jpg);
      background-size: cover;
      background-position: center;
+     
      display: grid;
      grid-template-areas: 'left left left right right';
    
@@ -206,15 +218,29 @@
         backdrop-filter: blur(20px);
         border-radius: 10px;
         margin: 0;
-        padding-top: 0px;
-        margin-bottom: 0px;
+        padding-top: 20px;
+        margin-bottom: 50px;
        box-shadow: 0px 2px 5px black;
+       box-sizing: border-box;
        
   
     }
+    .css-anplqi-MuiInputBase-root-MuiOutlinedInput-root, .css-6dhen7-MuiInputBase-root-MuiOutlinedInput-root, .css-rwd99p-MuiInputBase-input-MuiOutlinedInput-input, .css-1ujrz51-MuiInputBase-input-MuiOutlinedInput-input, .css-oys24r-MuiFormControl-root fieldset, .css-qddg4l-MuiButtonBase-root-MuiButton-root  {
+        border-radius: 10px;
+    }
+
+  
  
-    .css-qddg4l-MuiButtonBase-root-MuiButton-root {
+
+   .css-qddg4l-MuiButtonBase-root-MuiButton-root{
         background-color: #0076d3;
+
+    }
+    
+
+    .my-btn:hover .css-qddg4l-MuiButtonBase-root-MuiButton-root{
+        background-color: #004c86;
+
     }
     .css-r8wi31-MuiTypography-root{
         color: #0076d3;
@@ -234,7 +260,7 @@
         height: 280px;
         
         background-image: url(../images/water.png);
-       position: absolute;
+       position: fixed;
        bottom: 0;
        left: 0;
        -webkit-transform: scaleX(-1);
@@ -242,25 +268,49 @@
        z-index: 3;
     }
 
+    .css-2ha0w2-MuiTypography-root{
+    
+
+        span{
+            display: block;
+            text-align: center;
+          padding-bottom: 30px;
+            color: #0076d3;
+            font-size: 40px;
+            font-family: poppins;
+            
+          
+        }
+
+    }
+
     .css-q1eefp-MuiTypography-root{
         
-        font-variant: small-caps;
-        color: aliceblue;
-        font-size: 50px;
-        color: #3b3b3b;
+        
        
       
 
         span{
             display: block;
             text-align: center;
-            padding-top: 10px;
+          padding-bottom: 30px;
             color: #0076d3;
-            font-size: 30px;
-          
+            font-size: 40px;
+          font-family: poppins;
         }
     }
 
+
+    .WaterEffect{
+        width: 500px;
+        height: 140px;
+        position: absolute;
+        background-image: url(../images/water.png);
+        background-size: cover;
+        bottom: 100;
+        right: 0;
+        z-index: 99999;
+    }
     
 }
 

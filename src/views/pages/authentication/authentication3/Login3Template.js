@@ -24,6 +24,7 @@ const Login = () => {
         <div id="PageLogin">
             <div id="RightLogin">
                 <Grid id="LoginFormright" container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
+                    <div className="WaterEffect"></div>
                     <Grid item xs={6}>
                         <Grid
                             container
@@ -31,32 +32,17 @@ const Login = () => {
                             alignItems="center"
                             sx={{ minHeight: 'calc(100vh - 68px)' }}
                         >
-                            <Grid item sx={{ m: { xs: 3, sm: 3 }, mb: 3 }}>
+                            <Grid item sx={{ m: { xs: 3, sm: 3 }, mb: 0 }}>
                                 <AuthCardWrapper>
                                     <Grid container spacing={2} alignItems="center" justifyContent="center">
-                                        <Grid item sx={{ mb: 3 }}></Grid>
+                                        <Grid item sx={{ mb: 0 }}></Grid>
                                         <Grid item xs={12}>
                                             <Grid
                                                 container
                                                 direction={matchDownSM ? 'column-reverse' : 'row'}
                                                 alignItems="center"
                                                 justifyContent="center"
-                                            >
-                                                <Grid item>
-                                                    <Stack alignItems="center" justifyContent="center" spacing={1}>
-                                                        <Typography
-                                                            color={theme.palette.secondary.dark}
-                                                            gutterBottom
-                                                            variant={matchDownSM ? 'h2' : 'h1'}
-                                                        >
-                                                            tirta sasmita <span>LOGIN</span>
-                                                        </Typography>
-                                                        <Typography fontSize="16px" textAlign={matchDownSM ? 'center' : 'inherit'}>
-                                                            Masukan Kredensial anda untuk melanjutkan
-                                                        </Typography>
-                                                    </Stack>
-                                                </Grid>
-                                            </Grid>
+                                            ></Grid>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <AuthLogin />
